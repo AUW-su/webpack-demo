@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/AUW-su/webpack-demo#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.5.0",
     "lodash": "^4.17.5",
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.9"
