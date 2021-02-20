@@ -29,6 +29,20 @@ module.exports = {
                     'style-loader',
                     'css-loader'
                 ]
+            },
+            {
+                test: /\.tsx?$/,
+                use: [
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            transpileOnly: true,
+                            // experimentalWatchApi 与普通 TypeScript watch mode 共享同样的逻辑
+                            // 可以明显减少每次迭代时重新构建的模块数量，用于真正快速增量构建。
+                            experimentalWatchApi: true, 
+                        },
+                    },
+                ]
             }
         ]
     }
