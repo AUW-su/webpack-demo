@@ -10,8 +10,9 @@ module.exports = {
         // print: './src/print.js'
     },
     output: {
-        filename: '[name].bundle.js',
-        chunkFilename: '[name].bundle.js', // 动态导入功能：这里使用了 chunkFilename，它决定非入口 chunk 的名称
+        // filename: '[name].bundle.js',
+        filename: '[name].[hash].js',
+        // chunkFilename: '[name].bundle.js', // 动态导入功能：这里使用了 chunkFilename，它决定非入口 chunk 的名称
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [

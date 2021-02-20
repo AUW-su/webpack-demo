@@ -12,11 +12,11 @@ function component() {
   btn.innerHTML = 'Click me and check the console!';
   element.appendChild(btn);
   
-  button.onclick = e => import(/* webpackChunkName: "print" */ './print').then(module => {
+  btn.onclick = e => import(/* webpackChunkName: "print" */ './print').then(module => {
     var print = module.default;
     print();
   });
-  
+
   return element;
 }
   
