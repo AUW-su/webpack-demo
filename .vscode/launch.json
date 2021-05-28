@@ -19,6 +19,13 @@
             "runtimeExecutable": "npm",
             "runtimeArgs": ["run", "build"],
             "port": 8080
+        },{
+            "type": "node",
+            "request": "launch",
+            "name": "watch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "watch"],
+            "port": 8080
         },
     ]
 }
